@@ -29,8 +29,8 @@ Follow these steps to clone the repository and install the necessary dependencie
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/robotic-arm.git
-    cd robotic-arm
+    git clone https://github.com/yourusername/ufactory-xarm7.git
+    cd ufactory-xarm7
     ```
 
 2. Create and activate a virtual environment (recommended):
@@ -44,20 +44,34 @@ Follow these steps to clone the repository and install the necessary dependencie
     pip install -r requirements.txt
     ```
 
+4. Install the xArm Python SDK:
+    ```bash
+    pip install git+https://github.com/xArm-Developer/xArm-Python-SDK.git
+    ```
+
 ## Configuration
 
-Before running the robotic arm, you need to configure the settings:
+Before running the UFactory xArm7, you need to configure the settings:
 
 1. Create a configuration file by copying the example file:
     ```bash
     cp config.example.json config.json
     ```
 
-2. Edit `config.json` to match your setup. Make sure to specify the correct serial port and other necessary parameters.
+2. Edit `config.json` to match your setup. Make sure to specify the correct serial port or IP address and other necessary parameters. Example `config.json`:
+    ```json
+    {
+      "port": "/dev/ttyUSB0",  # For USB connection
+      "ip": "192.168.1.1",     # For Ethernet connection
+      "baudrate": 115200,
+      "timeout": 10
+    }
+    ```
 
-## Running the Robotic Arm
+## Running the UFactory xArm7
 
-Once the installation and configuration are complete, you can run the robotic arm using the following command:
+Once the installation and configuration are complete, you can run the UFactory xArm7 using the following command:
 
 ```bash
 python main.py
+
