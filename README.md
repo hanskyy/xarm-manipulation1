@@ -74,4 +74,29 @@ Once the installation and configuration are complete, you can run the UFactory x
 
 ```bash
 python main.py
+Example main.py Script
+
+Here is a basic example of a main.py script to control the xArm7:
+```
+import json
+from xarm.wrapper import XArmAPI
+
+# Load configuration
+with open('config.json') as config_file:
+    config = json.load(config_file)
+
+# Connect to xArm
+arm = XArmAPI(config['ip'], baud_checkset=False)
+
+# Initialize the arm
+arm.motion_enable(enable=True)
+arm.set_mode(0)
+arm.set_state(0)
+
+# Example: Move to a position
+arm.set_position(x=200, y=0, z=150, speed=50, wait=True)
+
+# Disconnect
+arm.disconnect()
+```
 
