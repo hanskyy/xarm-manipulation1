@@ -74,7 +74,7 @@ Once the installation and configuration are complete, you can run the UFactory x
 
 ```bash
 python main.py
-
+```
 
 Here is a basic example of a main.py script to control the xArm7:
 
