@@ -20,7 +20,7 @@ Before you begin, ensure you have the following prerequisites installed:
 
 - Python 3.8 or later
 - Pip (Python package manager)
-- Git
+- [Xarm Studio]([url](https://www.ufactory.cc/ufactory-studio/))
 
 ## Installation
 
