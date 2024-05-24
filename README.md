@@ -77,7 +77,7 @@ python main.py
 ```
 
 Here is a basic example of a main.py script to control the xArm7:
-
+```python
 import json
 from xarm.wrapper import XArmAPI
 
@@ -98,5 +98,5 @@ arm.set_position(x=200, y=0, z=150, speed=50, wait=True)
 
 # Disconnect
 arm.disconnect()
-
+```
 
