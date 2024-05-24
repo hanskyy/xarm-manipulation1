@@ -20,7 +20,8 @@ Before you begin, ensure you have the following prerequisites installed:
 
 - Python 3.8 or later
 - Pip (Python package manager)
-- [Xarm Studio]([url](https://www.ufactory.cc/ufactory-studio/))
+- [Xarm Studio](https://www.ufactory.cc/ufactory-studio/)
+- [xArm Python SDK](https://github.com/xArm-Developer/xArm-Python-SDK)
 
 ## Installation
 
