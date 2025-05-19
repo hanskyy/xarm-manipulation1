@@ -100,3 +100,13 @@ arm.set_position(x=200, y=0, z=150, speed=50, wait=True)
 arm.disconnect()
 ```
 
+flowchart TD
+    A([开始])
+    B[/输入 x₁…x₅ 及 权重 w₁…w₅/]
+    C[计算乘积：p₁ = x₁·w₁, …, p₅ = x₅·w₅]
+    D[累加求和：S = Σ pᵢ]
+    E[激活函数：y = f(S)]
+    F([输出 y])
+    G([结束])
+
+    A --> B --> C --> D --> E --> F --> G
